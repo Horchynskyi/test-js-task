@@ -1,0 +1,54 @@
+#wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    position: relative;
+}
+#listBlock{
+    min-width: 250px;
+    display: none;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow-y: hidden;
+    transition: 1s;
+}
+.list-open{
+    display: flex!important;
+}
+.list-item, #search, #openList{
+    background-color: darkgray;
+    border: 1px solid black;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    margin-right: 0px;
+}
+#search{
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+}
+#openList{
+    max-width: 200px;
+    margin: 20px auto;
+    background: grey;
+    color: white;
+}
+.hide{
+    position: absolute;
+    opacity: 0;
+    z-index: -200;
+}
+.selected{
+    border-color: blue;
+    background-color: grey;
+    color: white;
+}
